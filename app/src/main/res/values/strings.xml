@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ArchitectureComponentDemo</string>
     <string name="increase">Increase</string>
+    <string name="next_activity">Next Activity</string>
+    <string name="create_fragment">Create Fragment</string>
+    <string name="fragment_a">Fragment A</string>
 </resources>

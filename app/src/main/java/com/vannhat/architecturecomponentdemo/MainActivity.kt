@@ -6,6 +6,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.Transformations
+import com.vannhat.architecturecomponentdemo.Navigator.addFragment
+import com.vannhat.architecturecomponentdemo.test.TestIntent
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -36,12 +38,26 @@ class MainActivity : AppCompatActivity() {
         btn_increase.setOnClickListener {
             number.value = number.value?.plus(1)
         }
+
+        btn_go.setOnClickListener {
+            startActivity(TestIntent.newInstance(this))
+        }
+
+        btn_create_frag.setOnClickListener {
+            createFragment()
+        }
+    }
+
+    private fun createFragment() {
+        val fragmentA = FragmentA.newInstance()
+        addFragment(supportFragmentManager, fragmentA, R.id.frame_frag, tag = FragmentA.TAG)
     }
 
     private fun observer() {
-        covertNum.observe(this, Observer<String> {
-            tv_number.text = it.toString()
-        })
+       // covertNum.observe(this)
+//        covertNum.observe(this, Observer<String> {
+//            tv_number.text = it.toString()
+//        })
     }
 
     // using with switchMap

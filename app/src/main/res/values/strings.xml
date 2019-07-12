@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">ArchitectureComponentDemo</string>
     <string name="increase">Increase</string>
+    <string name="next_activity">Next Activity</string>
+    <string name="create_fragment_a">Create Fragment A</string>
+    <string name="create_fragment_b">Create Fragment B</string>
+    <string name="fragment_a">Fragment A</string>
+    <string name="fragment_b">Fragment B</string>
+    <string name="go_fragb">Go FragB</string>
+    <string name="text_pass_to_fragment_a">Text pass to Fragment A</string>
+    <string name="pass_content">Pass Content</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="update">Update</string>
 </resources>

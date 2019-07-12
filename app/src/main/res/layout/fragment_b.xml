@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_green_70"
+    android:background="@color/color_blue_100"
     android:orientation="vertical"
     >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/fragment_a"
+        android:text="@string/fragment_b"
         android:textColor="@color/color_black_100"
         android:textSize="@dimen/sp_25"
         />
-    <Button
-        android:id="@+id/btn_go_fragb"
+
+    <EditText
+        android:id="@+id/edt_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/go_fragb"
+        android:autofillHints="Do not underst and"
+        android:hint="@string/text_pass_to_fragment_a"
+        tools:ignore="UnusedAttribute"
         />
-    <TextView
-        android:id="@+id/tv_text_fromB"
+    <Button
+        android:id="@+id/btn_pass_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/color_black_100"
-        android:textSize="@dimen/sp_20"
+        android:text="@string/pass_content"
         />
 
 </LinearLayout>
